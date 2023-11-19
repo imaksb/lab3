@@ -74,7 +74,7 @@ body {
   }
 
 
-
+/* 
 img {
     background-color: aqua;
     opacity: 0;
@@ -101,4 +101,74 @@ img:hover {
 
 .image-container:hover .image-text {
     opacity: 0;
+} */
+ 
+.picture-container {
+  display: flex;
+  color: #ddd;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  max-width: 840px;
+  height: 540px;
+  background: linear-gradient(-45deg, transparent 70px, rgb(33, 33, 33));
+
+
+
+  position: relative; 
+}
+
+.picture-container p {
+  margin: 0; 
+  transition: opacity 0.3s;
+}
+
+.picture-container:hover p {
+  opacity: 0; 
+}
+
+.picture-container:hover {
+  background-image: url("../images/1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.search-container {
+  display: flex;
+  max-width: 300px; 
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+.search-container input[type="text"] {
+  flex: 1; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-container button[type="submit"] {
+  padding: 10px 3px;
+  width: 200px;
+  background-color: rgb(27, 33, 33);
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-container button[type="submit"]:hover {
+  background-color: rgb(83, 147, 151);
+}
+
+.information__container {
+  text-align: center;
+  border: 1px solid #ccc;
+  max-width: 840px;
+  margin: 0px auto;
+  background-color: rgb(33, 33, 33);
+}
+
+.submit__btn {
+  margin-left: 40px;
 }
